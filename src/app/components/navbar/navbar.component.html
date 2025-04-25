@@ -1,1 +1,65 @@
-<p>navbar works!</p>
+<header class="sticky top-0 z-50 bg-white dark:bg-gray-950 shadow-sm">
+    <div class="container mx-auto px-4 py-4 md:px-2 md:py-2 flex items-center justify-between">
+        <div class="flex items-center gap-4">
+            <div>
+                <img src="assets/logo.png" alt="Logo" class="h-16 w-16 object-cover" />
+            </div>
+        </div>
+        <nav class="hidden md:flex items-center space-x-6">
+            <a href="#about" class="hover:text-secondary transition-colors dark:text-gray-50"
+                prefetch={false}>About</a>
+            <a href="#projects" class="hover:text-secondary transition-colors dark:text-gray-50"
+                prefetch={false}>Projects</a>
+            <a href="#blog" class="hover:text-secondary transition-colors dark:text-gray-50" prefetch={false}>Blog</a>
+            <a href="#skills" class="hover:text-secondary transition-colors dark:text-gray-50"
+                prefetch={false}>Skills</a>
+            <a href="#contact" class="hover:text-secondary transition-colors dark:text-gray-50"
+                prefetch={false}>Contact</a>
+            <button (click)="toggleDarkMode()">
+                <svg *ngIf="isDarkMode" class="w-6 h-6 text-gray-900 dark:text-gray-100" fill="none"
+                    stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M12 3v1m0 16v1m8-8h1m-16 0H3m14.828 4.828l-.707.707M6.343 6.343l-.707-.707m12.728 0l-.707-.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z">
+                    </path>
+                </svg>
+
+                <svg *ngIf="!isDarkMode" class="w-6 h-6 text-gray-900 dark:text-gray-100" fill="none"
+                    stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                        d="M7.455 2.004a.75.75 0 0 1 .26.77 7 7 0 0 0 9.958 7.967.75.75 0 0 1 1.067.853A8.5 8.5 0 1 1 6.647 1.921a.75.75 0 0 1 .808.083Z"
+                        clip-rule="evenodd">
+                    </path>
+                </svg>
+            </button>
+        </nav>
+        <div class="md:hidden flex items-center gap-2">
+            <button (click)="toggleDarkMode()">
+                <svg *ngIf="isDarkMode" class="w-6 h-6 text-gray-900 dark:text-gray-100" fill="none" stroke="currentColor"
+                    viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M12 3v1m0 16v1m8-8h1m-16 0H3m14.828 4.828l-.707.707M6.343 6.343l-.707-.707m12.728 0l-.707-.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z">
+                    </path>
+                </svg>
+                <svg *ngIf="!isDarkMode" class="w-6 h-6 text-gray-900 dark:text-gray-100" fill="none" stroke="currentColor"
+                    viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                        d="M7.455 2.004a.75.75 0 0 1 .26.77 7 7 0 0 0 9.958 7.967.75.75 0 0 1 1.067.853A8.5 8.5 0 1 1 6.647 1.921a.75.75 0 0 1 .808.083Z"
+                        clip-rule="evenodd">
+                    </path>
+                </svg>
+            </button>
+            <button
+                class="inline-flex items-center justify-center rounded-md p-2 text-gray-900 dark:text-gray-100 hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7">
+                    </path>
+                </svg>
+            </button>
+        </div>
+        <!-- <button
+            class="block rounded-md bg-[#F472B6] px-4 py-2 text-white shadow-sm transition-colors hover:bg-[#EC4899] focus:outline-none focus:ring-2 focus:ring-[#F472B6] focus:ring-offset-2 md:hidden">
+            Menu
+        </button> -->
+    </div>
+</header>
