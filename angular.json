@@ -13,6 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
+            "baseHref": "/portfolio/",
             "outputPath": "dist",
             "index": "src/index.html",
             "browser": "src/main.ts",
@@ -30,7 +31,15 @@
               
             ],
             "scripts": [
-              
+              "node_modules/aos/dist/aos.js",
+              "node_modules/vanta/dist/vanta.birds.min.js",
+              "node_modules/vanta/dist/vanta.waves.min.js",
+              "node_modules/vanta/dist/vanta.net.min.js",
+              "node_modules/vanta/dist/vanta.halo.min.js",
+              "node_modules/vanta/dist/vanta.fog.min.js",
+              "node_modules/vanta/dist/vanta.globe.min.js",
+              "node_modules/vanta/dist/vanta.dots.min.js",
+              "node_modules/vanta/dist/vanta.cells.min.js"
               
             ],
             "allowedCommonJsDependencies": ["vanta"],
