@@ -20,12 +20,15 @@ export class AppComponent implements OnInit, AfterViewInit, OnDestroy {
 
   ngOnInit(): void {
     // AOS.init();
-    import('aos/dist/aos.js').then(AOS => {
-      AOS.init({
-        duration: 1200,
-        once: true // whether animation should happen only once - while scrolling down
+    if (typeof window !== 'undefined') {
+      import('aos/dist/aos.js').then(AOS => {
+        AOS.init({
+          duration: 1200,
+          once: true // whether animation should happen only once - while scrolling down
+        });
       });
-    });
+    }
+    
   }
 
   ngAfterViewInit(): void {
@@ -45,20 +48,23 @@ export class AppComponent implements OnInit, AfterViewInit, OnDestroy {
   }
 
   loadVanta(isDarkMode: boolean) {
-    import('vanta/dist/vanta.birds.min').then(VANTA => {
-      this.vantaEffect = VANTA.default({
-        el: this.elementRef.nativeElement.querySelector('#vanta-bg'),
-        backgroundColor: isDarkMode ? 0x000000 : 0xffffff,
-        color1: 0x533F7B,
-        color2: 0xbeaced,
-        birdSize: 0.5,
-        wingSpan: 10,
-        speedLimit: 3.0,
-        separation: 50.0,
-        alignment: 20.0,
-        cohesion: 20.0
+    if (typeof window !== 'undefined') {
+      import('vanta/dist/vanta.birds.min').then(VANTA => {
+        this.vantaEffect = VANTA.default({
+          el: this.elementRef.nativeElement.querySelector('#vanta-bg'),
+          backgroundColor: isDarkMode ? 0x000000 : 0xffffff,
+          color1: 0x533F7B,
+          color2: 0xbeaced,
+          birdSize: 0.5,
+          wingSpan: 10,
+          speedLimit: 3.0,
+          separation: 50.0,
+          alignment: 20.0,
+          cohesion: 20.0
+        });
       });
-    });
+    }
+
   }
   // ngAfterViewInit(): void {
   //   if (typeof window !== 'undefined') {

@@ -4,14 +4,18 @@
 
     <app-navbar></app-navbar>
     <main class="flex-1">
+
+      <!-- Hero Section -->
       <section class="flex flex-col items-center justify-center gap-4 px-4 py-16 md:py-24 lg:py-32">
         <div class="flex flex-col items-center gap-2">
           <div class="rounded-full overflow-hidden w-40 h-40 mx-auto border-2 border-lavender shadow-lg">
             <img src="assets/photo_01.png" alt="Developer" class="rounded-full" />
           </div>
-          <h1 class="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-primary dark:text-gray-50">Daisy
+          <h1
+            class="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl animate-pulse text-primary dark:text-gray-50">
+            Daisy
             Geraldine</h1>
-          <p class="text-lg text-gray-500 dark:text-gray-400">Desarrolladora Flutter Junior</p>
+          <p class="text-xl text-gray-500 dark:text-gray-400">Desarrolladora Flutter Junior</p>
         </div>
         <div class="flex flex-col items-center gap-4 max-w-2xl">
           <p class="text-center text-gray-500 dark:text-gray-400">
@@ -33,10 +37,13 @@
         </div>
       </section>
 
-      <section id="about" class="container mx-auto px-4 py-12 md:px-6 md:py-12">
+      <div class="border-t pt-6 mt-4"></div>
+
+      <!-- About Section -->
+      <section id="about" class="container mx-auto px-4 py-12 md:px-24 md:py-12">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div class="space-y-4">
-            <h2 class="text-3xl md:text-4xl font-bold text-primary dark:text-gray-50">Sobre mí</h2>
+            <h2 class="text-3xl md:text-4xl font-bold text-dark dark:text-gray-50">Sobre mí</h2>
             <p class="text-gray-500 dark:text-gray-400">
               ¡Hola! Soy <span class="font-semibold text-dark dark:text-secondary">Daisy</span>, una desarrolladora
               junior apasionada por la tecnología y el aprendizaje constante. Tengo experiencia en
@@ -59,12 +66,10 @@
               Actualmente, estoy enfocada en finalizar mis proyectos personales, profundizar en tecnologías móviles
               modernas y explorar cómo aplicar <strong>inteligencia artificial</strong> en el desarrollo de apps.
             </p>
-
-
           </div>
 
           <div class="space-y-4">
-            <h2 class="text-3xl md:text-4xl font-bold text-primary dark:text-gray-50">Experiencia Profesional</h2>
+            <h2 class="text-3xl md:text-4xl font-bold text-dark dark:text-gray-50">Experiencia Profesional</h2>
             <div class="space-y-2">
 
               <!-- Classgap -->
@@ -119,14 +124,15 @@
             </div>
           </div>
         </div>
-        <div class="border-t pt-6 mt-4">
-        </div>
+
       </section>
 
+      <div class="border-t pt-6 mt-4"></div>
+
       <!-- Projects Section -->
-      <section id="projects" class="container mx-auto px-4 py-12 md:px-6 md:py-24">
+      <section id="projects" class="container mx-auto px-4 py-12 md:px-24 md:py-24">
         <div class="space-y-4">
-          <h2 class="text-3xl md:text-4xl font-bold text-primary dark:text-gray-50">Proyectos destacados</h2>
+          <h2 class="text-3xl md:text-4xl font-bold text-dark dark:text-gray-50">Proyectos destacados</h2>
           <p class="text-gray-500 dark:text-gray-400">Estos son algunos de los proyectos clave en los que he trabajado:
           </p>
         </div>
@@ -134,13 +140,14 @@
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
 
           <!-- Proyecto 1: YouTube Clone -->
-          <div class="w-full max-w-sm bg-white rounded-xl shadow-lg overflow-hidden flex flex-col justify-between"
+          <div
+            class="w-full max-w-sm bg-white/80 dark:bg-gray-800/80 rounded-xl shadow-lg overflow-hidden flex flex-col justify-between"
             data-aos="fade-up">
             <div class="aspect-[16/9] bg-tertiary">
               <img src="https://via.placeholder.com/400x225" alt="YouTube Clone" class="object-cover w-full h-full" />
             </div>
             <div class="p-4 flex flex-col flex-grow">
-              <h3 class="text-xl font-semibold text-primary mb-2">YouTube Clone (en progreso)</h3>
+              <h3 class="text-xl font-semibold text-primary dark:text-gray-100 mb-2">YouTube Clone (en progreso)</h3>
               <p class="text-gray-500 text-sm mb-2">App con autenticación, base de datos y lógica de navegación.</p>
               <div class="flex flex-wrap gap-2 mt-2 mb-4">
                 <span class="bg-secondary text-primary px-2 py-1 rounded text-xs">Flutter</span>
@@ -149,7 +156,7 @@
               </div>
               <p class="text-sm text-darkpurple mb-4"><strong>Rol:</strong> Mobile Developer</p>
 
-              <a href="#" target="_blank"
+              <a href="https://github.com/DaisyGeraldine/youtube_clone" target="_blank"
                 class="mt-auto inline-flex items-center justify-center gap-2 bg-primary text-white text-light px-4 py-2 rounded hover:bg-dark transition">
                 <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
                   <path
@@ -162,13 +169,14 @@
           </div>
 
           <!-- Proyecto 2: Clon de Airbnb -->
-          <div class="w-full max-w-sm bg-white rounded-xl shadow-lg overflow-hidden flex flex-col justify-between"
+          <div
+            class="w-full max-w-sm bg-white/80 dark:bg-gray-800/80 rounded-xl shadow-lg overflow-hidden flex flex-col justify-between"
             data-aos="fade-up">
             <div class="aspect-[16/9] bg-tertiary">
               <img src="https://via.placeholder.com/400x225" alt="Clon Airbnb" class="object-cover w-full h-full" />
             </div>
             <div class="p-4 flex flex-col flex-grow">
-              <h3 class="text-xl font-semibold text-primary mb-2">Clon de Airbnb (2022)</h3>
+              <h3 class="text-xl font-semibold text-primary dark:text-gray-100 mb-2">Clon de Airbnb (2022)</h3>
               <p class="text-gray-500 text-sm mb-2">Web dinámica desde CLI hasta interfaz web completa.</p>
               <div class="flex flex-wrap gap-2 mt-2 mb-4">
                 <span class="bg-secondary text-primary px-2 py-1 rounded text-xs">HTML</span>
@@ -178,7 +186,7 @@
                 <span class="bg-secondary text-primary px-2 py-1 rounded text-xs">MySQL</span>
               </div>
               <p class="text-sm text-darkpurple mb-4"><strong>Rol:</strong> Fullstack Developer</p>
-              <a href="#" target="_blank"
+              <a href="https://github.com/DaisyGeraldine/holbertonschool-AirBnB_clone_v4" target="_blank"
                 class="mt-auto inline-flex items-center justify-center gap-2 bg-primary text-white text-light px-4 py-2 rounded hover:bg-dark transition">
                 <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
                   <path
@@ -190,20 +198,21 @@
           </div>
 
           <!-- Proyecto 3: Simple Shell -->
-          <div class="w-full max-w-sm bg-white rounded-xl shadow-lg overflow-hidden flex flex-col justify-between"
+          <div
+            class="w-full max-w-sm bg-white/80 dark:bg-gray-800/80 rounded-xl shadow-lg overflow-hidden flex flex-col justify-between"
             data-aos="fade-up">
             <div class="aspect-[16/9] bg-tertiary">
               <img src="https://via.placeholder.com/400x225" alt="Simple Shell" class="object-cover w-full h-full" />
             </div>
             <div class="p-4 flex flex-col flex-grow">
-              <h3 class="text-xl font-semibold text-primary mb-2">Simple Shell (2022)</h3>
+              <h3 class="text-xl font-semibold text-primary dark:text-gray-100 mb-2">Simple Shell (2022)</h3>
               <p class="text-gray-500 text-sm mb-2">Emulación de shell UNIX en modo interactivo y no interactivo.</p>
               <div class="flex flex-wrap gap-2 mt-2 mb-4">
                 <span class="bg-secondary text-primary px-2 py-1 rounded text-xs">Bash</span>
                 <span class="bg-secondary text-primary px-2 py-1 rounded text-xs">C</span>
               </div>
               <p class="text-sm text-darkpurple mb-4"><strong>Rol:</strong> Systems Developer</p>
-              <a href="#" target="_blank"
+              <a href="https://github.com/DaisyGeraldine/holbertonschool-simple_shell" target="_blank"
                 class="mt-auto inline-flex items-center justify-center gap-2 bg-primary text-white text-light px-4 py-2 rounded hover:bg-dark transition">
                 <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
                   <path
@@ -215,20 +224,21 @@
           </div>
 
           <!-- Proyecto 4: Printf -->
-          <div class="w-full max-w-sm bg-white rounded-xl shadow-lg overflow-hidden flex flex-col justify-between"
+          <div
+            class="w-full max-w-sm bg-white/80 dark:bg-gray-800/80 rounded-xl shadow-lg overflow-hidden flex flex-col justify-between"
             data-aos="fade-up">
             <div class="aspect-[16/9] bg-tertiary">
               <img src="https://via.placeholder.com/400x225" alt="Printf" class="object-cover w-full h-full" />
             </div>
             <div class="p-4 flex flex-col flex-grow">
-              <h3 class="text-xl font-semibold text-primary mb-2">Printf (2022)</h3>
+              <h3 class="text-xl font-semibold text-primary dark:text-gray-100 mb-2">Printf (2022)</h3>
               <p class="text-gray-500 text-sm mb-2">Implementación de printf en C con alta precisión.</p>
               <div class="flex flex-wrap gap-2 mt-2 mb-4">
                 <span class="bg-secondary text-primary px-2 py-1 rounded text-xs">C</span>
                 <span class="bg-secondary text-primary px-2 py-1 rounded text-xs">Bash</span>
               </div>
               <p class="text-sm text-darkpurple mb-4"><strong>Rol:</strong> Systems Developer</p>
-              <a href="#" target="_blank"
+              <a href="https://github.com/IverSutizal/iver-printf" target="_blank"
                 class="mt-auto inline-flex items-center justify-center gap-2 bg-primary text-white text-light px-4 py-2 rounded hover:bg-dark transition">
                 <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
                   <path
@@ -240,13 +250,14 @@
           </div>
 
           <!-- Proyecto 5: Esta landing page -->
-          <div class="w-full max-w-sm bg-white rounded-xl shadow-lg overflow-hidden flex flex-col justify-between"
+          <div
+            class="w-full max-w-sm bg-white/80 dark:bg-gray-800/80 rounded-xl shadow-lg overflow-hidden flex flex-col justify-between"
             data-aos="fade-up">
             <div class="aspect-[16/9] bg-tertiary">
               <img src="https://via.placeholder.com/400x225" alt="Landing Page" class="object-cover w-full h-full" />
             </div>
             <div class="p-4 flex flex-col flex-grow">
-              <h3 class="text-xl font-semibold text-primary mb-2">Landing Page personal (2024)</h3>
+              <h3 class="text-xl font-semibold text-primary dark:text-gray-100 mb-2">Landing Page personal (2024)</h3>
               <p class="text-gray-500 text-sm mb-2">Diseño responsive en Tailwind con estilo moderno, scroll reveal y
                 accesibilidad.</p>
               <div class="flex flex-wrap gap-2 mt-2 mb-4">
@@ -255,7 +266,7 @@
                 <span class="bg-secondary text-primary px-2 py-1 rounded text-xs">JavaScript</span>
               </div>
               <p class="text-sm text-darkpurple mb-4"><strong>Rol:</strong> Frontend Developer</p>
-              <a href="#" target="_blank"
+              <a href="https://github.com/DaisyGeraldine/Portfolio" target="_blank"
                 class="mt-auto inline-flex items-center justify-center gap-2 bg-primary text-white text-light px-4 py-2 rounded hover:bg-dark transition">
                 <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
                   <path
@@ -269,9 +280,12 @@
         </div>
       </section>
 
-      <section id="blog" class="container mx-auto px-4 py-12 md:px-6 md:py-24 bg-gray-100 dark:bg-gray-800 opacity-90">
+      <!-- <div class="border-t pt-6 mt-4"></div> -->
+
+      <!-- Blog Section -->
+      <!-- <section id="blog" class="container mx-auto px-4 py-12 md:px-24 md:py-24 bg-gray-100 dark:bg-gray-800 opacity-90">
         <div class="space-y-4">
-          <h2 class="text-3xl md:text-4xl font-bold dark:text-gray-50">Recent Blog Posts</h2>
+          <h2 class="text-3xl md:text-4xl font-bold text-dark dark:text-gray-50">Publicaciones</h2>
           <p class="text-gray-500 dark:text-gray-400">Insights and stories from my journey as a developer:</p>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
@@ -306,103 +320,273 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
 
-      <section id="skills" class="container mx-auto px-4 py-12 md:px-6 md:py-24">
+      <div class="border-t pt-6 mt-4"></div>
+
+      <!-- Skills Section -->
+      <section id="skills" class="container mx-auto px-4 py-12 md:px-24 md:py-24">
         <div class="space-y-4">
-          <h2 class="text-3xl md:text-4xl font-bold dark:text-gray-50">Skills</h2>
-          <p class="text-gray-500 dark:text-gray-400">A summary of my technical skills and expertise:</p>
+          <h2 class="text-3xl md:text-4xl font-bold text-dark dark:text-gray-50">Competencias técnicas</h2>
+          <p class="text-gray-500 dark:text-gray-400">Mi experiencia abarca diversas tecnologías y herramientas de
+            desarrollo de aplicaciones.</p>
         </div>
-        <div class="grid grid-cols-2 md:grid-cols-3 gap-8 mt-8">
-          <div class="flex items-center space-x-4">
-            <div class="bg-yellow-500 text-white rounded-full w-10 h-10 flex items-center justify-center">
-              <app-icon name="code" class="w-6 h-6"></app-icon>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
+
+          <!-- Card 1: Lenguajes de programación -->
+          <div
+            class="rounded-lg bg-white/80 dark:bg-gray-800/80 border border-gray-200 dark:border-gray-700 shadow-sm hover:shadow-md transition-all duration-300">
+            <div class="p-6 pb-2 flex items-center gap-4">
+              <div class="text-dark dark:text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-8 w-8">
+                  <path d="m18 16 4-4-4-4"></path>
+                  <path d="m6 8-4 4 4 4"></path>
+                  <path d="m14.5 4-5 16"></path>
+                </svg>
+              </div>
+              <h3 class="text-xl font-semibold text-dark dark:text-white">
+                Lenguajes de programación
+              </h3>
             </div>
-            <div>
-              <h3 class="font-bold">Frontend Development</h3>
-              <p class="text-gray-500 dark:text-gray-400">React, Angular, Vue.js</p>
-            </div>
-          </div>
-          <div class="flex items-center space-x-4">
-            <div class="bg-yellow-500 text-white rounded-full w-10 h-10 flex items-center justify-center">
-              <app-icon name="server" class="w-6 h-6"></app-icon>
-            </div>
-            <div>
-              <h3 class="font-bold">Backend Development</h3>
-              <p class="text-gray-500 dark:text-gray-400">Node.js, Django, Ruby on Rails</p>
-            </div>
-          </div>
-          <div class="flex items-center space-x-4">
-            <div class="bg-yellow-500 text-white rounded-full w-10 h-10 flex items-center justify-center">
-              <app-icon name="database" class="w-6 h-6"></app-icon>
-            </div>
-            <div>
-              <h3 class="font-bold">Database Management</h3>
-              <p class="text-gray-500 dark:text-gray-400">MySQL, PostgreSQL, MongoDB</p>
-            </div>
-          </div>
-          <div class="flex items-center space-x-4">
-            <div class="bg-yellow-500 text-white rounded-full w-10 h-10 flex items-center justify-center">
-              <app-icon name="cloud" class="w-6 h-6"></app-icon>
-            </div>
-            <div>
-              <h3 class="font-bold">Cloud Computing</h3>
-              <p class="text-gray-500 dark:text-gray-400">AWS, Azure, Google Cloud</p>
+            <div class="p-6 pt-2">
+              <div class="flex flex-wrap gap-2">
+                <span
+                  class="inline-flex items-center rounded-md bg-primary dark:bg-secondary px-3 py-1.5 text-sm font-medium text-purple-200 dark:text-dark">
+                  Dart
+                </span>
+                <span
+                  class="inline-flex items-center rounded-md bg-primary dark:bg-secondary px-3 py-1.5 text-sm font-medium text-purple-200 dark:text-dark">
+                  JavaScript
+                </span>
+                <span
+                  class="inline-flex items-center rounded-md bg-primary dark:bg-secondary px-3 py-1.5 text-sm font-medium text-purple-200 dark:text-dark">
+                  Python
+                </span>
+              </div>
             </div>
           </div>
-          <div class="flex items-center space-x-4">
-            <div class="bg-yellow-500 text-white rounded-full w-10 h-10 flex items-center justify-center">
-              <app-icon name="tools" class="w-6 h-6"></app-icon>
+
+          <!-- Card 2: Tecnologías web -->
+          <div
+            class="rounded-lg bg-white/80 dark:bg-gray-800/80 border border-gray-200 dark:border-gray-700 shadow-sm hover:shadow-md transition-all duration-300">
+            <div class="p-6 pb-2 flex items-center gap-4">
+              <div class="text-dark dark:text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-8 w-8">
+                  <path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"></path>
+                  <polyline points="14 2 14 8 20 8"></polyline>
+                </svg>
+              </div>
+              <h3 class="text-xl font-semibold text-dark dark:text-white">
+                Tecnologías web
+              </h3>
             </div>
-            <div>
-              <h3 class="font-bold">DevOps</h3>
-              <p class="text-gray-500 dark:text-gray-400">Docker, Kubernetes, Jenkins</p>
+            <div class="p-6 pt-2">
+              <div class="flex flex-wrap gap-2">
+                <span
+                  class="inline-flex items-center rounded-md bg-primary dark:bg-secondary px-3 py-1.5 text-sm font-medium text-purple-200 dark:text-dark">
+                  HTML
+                </span>
+                <span
+                  class="inline-flex items-center rounded-md bg-primary dark:bg-secondary px-3 py-1.5 text-sm font-medium text-purple-200 dark:text-dark">
+                  CSS
+                </span>
+              </div>
             </div>
           </div>
-          <div class="flex items-center space-x-4">
-            <div class="bg-yellow-500 text-white rounded-full w-10 h-10 flex items-center justify-center">
-              <app-icon name="shield" class="w-6 h-6"></app-icon>
+
+          <!-- Card 3: Frameworks y bibliotecas -->
+          <div
+            class="rounded-lg bg-white/80 dark:bg-gray-800/80 border border-gray-200 dark:border-gray-700 shadow-sm hover:shadow-md transition-all duration-300">
+            <div class="p-6 pb-2 flex items-center gap-4">
+              <div class="text-dark dark:text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-8 w-8">
+                  <path d="m16 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"></path>
+                  <path d="m2 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"></path>
+                  <path d="M7 21h10"></path>
+                  <path d="M12 3v18"></path>
+                  <path d="M3 7h2c2 0 5-1 7-2 2 1 5 2 7 2h2"></path>
+                </svg>
+              </div>
+              <h3 class="text-xl font-semibold text-dark dark:text-white">
+                Frameworks y bibliotecas
+              </h3>
             </div>
-            <div>
-              <h3 class="font-bold">Cybersecurity</h3>
-              <p class="text-gray-500 dark:text-gray-400">Penetration Testing, Vulnerability Assessment</p>
+            <div class="p-6 pt-2">
+              <div class="flex flex-wrap gap-2">
+                <span
+                  class="inline-flex items-center rounded-md bg-primary dark:bg-secondary px-3 py-1.5 text-sm font-medium text-purple-200 dark:text-dark">
+                  Flutter
+                </span>
+                <span
+                  class="inline-flex items-center rounded-md bg-primary dark:bg-secondary px-3 py-1.5 text-sm font-medium text-purple-200 dark:text-dark">
+                  Angular
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4: Bases de datos -->
+          <div
+            class="rounded-lg bg-white/80 dark:bg-gray-800/80 border border-gray-200 dark:border-gray-700 shadow-sm hover:shadow-md transition-all duration-300">
+            <div class="p-6 pb-2 flex items-center gap-4">
+              <div class="text-dark dark:text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-8 w-8">
+                  <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                  <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                  <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+                </svg>
+              </div>
+              <h3 class="text-xl font-semibold text-dark dark:text-white">
+                Bases de datos
+              </h3>
+            </div>
+            <div class="p-6 pt-2">
+              <div class="flex flex-wrap gap-2">
+                <span
+                  class="inline-flex items-center rounded-md bg-primary dark:bg-secondary px-3 py-1.5 text-sm font-medium text-purple-200 dark:text-dark">
+                  MySQL
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 5: Herramientas y plataformas -->
+          <div
+            class="rounded-lg bg-white/80 dark:bg-gray-800/80 border border-gray-200 dark:border-gray-700 shadow-sm hover:shadow-md transition-all duration-300">
+            <div class="p-6 pb-2 flex items-center gap-4">
+              <div class="text-dark dark:text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-8 w-8">
+                  <path
+                    d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z">
+                  </path>
+                </svg>
+              </div>
+              <h3 class="text-xl font-semibold text-dark dark:text-white">
+                Herramientas y plataformas
+              </h3>
+            </div>
+            <div class="p-6 pt-2">
+              <div class="flex flex-wrap gap-2">
+                <span
+                  class="inline-flex items-center rounded-md bg-primary dark:bg-secondary px-3 py-1.5 text-sm font-medium text-purple-200 dark:text-dark">
+                  Git
+                </span>
+                <span
+                  class="inline-flex items-center rounded-md bg-primary dark:bg-secondary px-3 py-1.5 text-sm font-medium text-purple-200 dark:text-dark">
+                  GitHub
+                </span>
+                <span
+                  class="inline-flex items-center rounded-md bg-primary dark:bg-secondary px-3 py-1.5 text-sm font-medium text-purple-200 dark:text-dark">
+                  Bash
+                </span>
+                <span
+                  class="inline-flex items-center rounded-md bg-primary dark:bg-secondary px-3 py-1.5 text-sm font-medium text-purple-200 dark:text-dark">
+                  Linux
+                </span>
+                <span
+                  class="inline-flex items-center rounded-md bg-primary dark:bg-secondary px-3 py-1.5 text-sm font-medium text-purple-200 dark:text-dark">
+                  Firebase
+                </span>
+                <span
+                  class="inline-flex items-center rounded-md bg-primary dark:bg-secondary px-3 py-1.5 text-sm font-medium text-purple-200 dark:text-dark">
+                  Postman
+                </span>
+                <span
+                  class="inline-flex items-center rounded-md bg-primary dark:bg-secondary px-3 py-1.5 text-sm font-medium text-purple-200 dark:text-dark">
+                  Figma
+                </span>
+                <span
+                  class="inline-flex items-center rounded-md bg-primary dark:bg-secondary px-3 py-1.5 text-sm font-medium text-purple-200 dark:text-dark">
+                  Trello
+                </span>
+                <span
+                  class="inline-flex items-center rounded-md bg-primary dark:bg-secondary px-3 py-1.5 text-sm font-medium text-purple-200 dark:text-dark">
+                  Slack
+                </span>
+                <span
+                  class="inline-flex items-center rounded-md bg-primary dark:bg-secondary px-3 py-1.5 text-sm font-medium text-purple-200 dark:text-dark">
+                  Notion
+                </span>
+                <span
+                  class="inline-flex items-center rounded-md bg-primary dark:bg-secondary px-3 py-1.5 text-sm font-medium text-purple-200 dark:text-dark">
+                  Power BI
+                </span>
+                <span
+                  class="inline-flex items-center rounded-md bg-primary dark:bg-secondary px-3 py-1.5 text-sm font-medium text-purple-200 dark:text-dark">
+                  Looker Studio
+                </span>
+                <span
+                  class="inline-flex items-center rounded-md bg-primary dark:bg-secondary px-3 py-1.5 text-sm font-medium text-purple-200 dark:text-dark">
+                  Microsoft Excel
+                </span>
+                <span
+                  class="inline-flex items-center rounded-md bg-primary dark:bg-secondary px-3 py-1.5 text-sm font-medium text-purple-200 dark:text-dark">
+                  Make
+                </span>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section id="contact" class="container mx-auto px-4 py-12 md:px-6 md:py-24 bg-gray-100 dark:bg-gray-800">
-        <div class="container mx-auto flex flex-col gap-8 px-4 md:flex-row md:px-6">
-          <div class="flex-1">
+      <div class="border-t pt-6 mt-4"></div>
+
+      <!-- Contact Section -->
+      <section id="contact" class="container mx-auto px-4 py-12 md:px-24 md:py-24">
+        <div class="flex flex-col gap-12 md:flex-row md:items-start md:gap-24">
+          <!-- Texto e Iconos -->
+          <div class="flex-1 space-y-6">
             <div class="space-y-4">
-              <h2 class="text-3xl md:text-4xl font-bold dark:text-gray-50">Get in Touch</h2>
-              <p class="text-gray-500 dark:text-gray-400">
-                I'm always excited to connect with new people and discuss potential projects. Feel free to reach out to
-                me using the form below, or connect with me on social media.</p>
+              <h2 class="text-3xl md:text-4xl font-bold text-dark dark:text-gray-50">Contacto</h2>
+              <p class="text-gray-600 dark:text-gray-400">
+                ¿Te interesa saber más sobre mi trabajo o colaborar?
+              </p>
+              <p class="text-gray-600 dark:text-gray-400">
+                Estoy abierta a nuevas oportunidades, tanto laborales como de proyectos.
+              </p>
             </div>
-            <div class="mt-8 flex gap-4">
-              <a href="#" class="text-pink-500 hover:underline" prefetch={false}>
-                <i class="fa fa-linkedin"></i>
+
+            <div class="flex gap-6 mt-6">
+              <a href="https://wa.me/51922749652"
+                class="text-primary dark:text-soft hover:text-secondary dark:hover:text-gray-100 transition-colors"
+                aria-label="WhatsApp">
+                <i class="fab fa-whatsapp fa-2x"></i>
               </a>
-              <a href="#" class="text-pink-500 hover:underline" prefetch={false}>
-                <i class="fa fa-twitter"></i>
+              <a href="#"
+                class="text-primary dark:text-soft hover:text-secondary dark:hover:text-gray-100 transition-colors"
+                aria-label="Email">
+                <i class="fas fa-envelope fa-2x"></i>
               </a>
-              <a href="#" class="text-pink-500 hover:underline" prefetch={false}>
-                <i class="fa fa-github"></i>
+              <a href="https://www.linkedin.com/in/daisychlapa/"
+                class="text-primary dark:text-soft hover:text-secondary dark:hover:text-gray-100 transition-colors"
+                aria-label="LinkedIn">
+                <i class="fab fa-linkedin fa-2x"></i>
+              </a>
+              <a href="https://github.com/DaisyGeraldine"
+                class="text-primary dark:text-soft hover:text-secondary dark:hover:text-gray-100 transition-colors"
+                aria-label="GitHub">
+                <i class="fab fa-github fa-2x"></i>
               </a>
             </div>
           </div>
+
+          <!-- Formulario -->
           <div class="flex-1">
             <form class="space-y-4">
-              <Input type="text" placeholder="Name"
-                class="w-full rounded-lg border border-gray-300 px-4 py-2 focus:border-pink-500 focus:outline-none" />
-              <Input type="email" placeholder="Email"
-                class="w-full rounded-lg border border-gray-300 px-4 py-2 focus:border-pink-500 focus:outline-none" />
-              <textarea placeholder="Message"
-                class="w-full rounded-lg border border-gray-300 px-4 py-2 focus:border-pink-500 focus:outline-none"></textarea>
+              <input type="text" placeholder="Nombre"
+                class="w-full rounded-lg border border-gray-300 px-4 py-3 focus:border-secondary focus:outline-none" />
+              <input type="email" placeholder="Correo electrónico"
+                class="w-full rounded-lg border border-gray-300 px-4 py-3 focus:border-secondary focus:outline-none" />
+              <textarea placeholder="Mensaje" rows="5"
+                class="w-full rounded-lg border border-gray-300 px-4 py-3 focus:border-secondary focus:outline-none"></textarea>
               <button type="submit"
-                class="inline-flex items-center justify-center rounded-lg bg-pink-500 px-6 py-2 text-sm font-medium text-white shadow transition-colors hover:bg-pink-600 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-pink-500">
-                Send Message
+                class="inline-flex w-full items-center justify-center rounded-lg bg-primary px-6 py-2 text-base font-medium text-white shadow-md transition-colors hover:bg-dark focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-secondary">
+                Enviar Mensaje
               </button>
             </form>
           </div>
