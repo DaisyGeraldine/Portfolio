@@ -23,7 +23,8 @@
             "tsConfig": "tsconfig.app.json",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              { "glob": "**/*", "input": "src/.nojekyll", "output": "./" }
             ],
             "styles": [
               "node_modules/aos/dist/aos.css",
@@ -42,7 +43,7 @@
               "node_modules/vanta/dist/vanta.cells.min.js"
               
             ],
-            "allowedCommonJsDependencies": ["vanta"]
+            "allowedCommonJsDependencies": ["vanta", "three"]
           },
           "configurations": {
             "production": {
